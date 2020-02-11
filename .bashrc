@@ -14,6 +14,8 @@ PATH="$HOME/go/bin:$PATH"
 PATH="/opt/altera/19.1/quartus/bin:$PATH"
 
 alias quartus64='quartus --64bit'
+alias quartus13='/opt/altera/13.0sp1/quartus/bin/quartus'
+alias quartus1364='/opt/altera/13.0sp1/quartus/bin/quartus --64bit'
 
 # For config file git bare repo
 alias config='/usr/bin/git --git-dir=/home/keith/dotfiles --work-tree=/home/keith'
