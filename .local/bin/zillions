@@ -1,0 +1,3 @@
+#!/bin/sh
+
+wine "C:\Program Files (x86)\Zillions Development\Zillions Demo\Zillions.exe"
