@@ -1,0 +1,9 @@
+[Default Applications]
+x-scheme-handler/magnet=torrent.desktop
+application/x-bittorrent=torrent.desktop
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
+x-scheme-handler/lbry=lbry.desktop
+application/x-zillions=zillions.desktop
+
+[Added Associations]
+text/html=firefox.desktop;
