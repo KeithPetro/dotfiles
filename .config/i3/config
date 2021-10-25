@@ -200,10 +200,12 @@ workspace $ws3 output DVI-D-1
 
 # Assign applications to specific workspaces
 assign [class="discord"] $ws3
+assign [class="pavucontrol"] $ws2
 
 # Execute applications at startup
 exec --no-startup-id discord-canary
 exec --no-startup-id dunst
+exec --no-startup-id pavucontrol
 
 # Resize windows using keyboard
 bindsym $mod+Ctrl+Right resize shrink width 1 px or 1 ppt
@@ -216,3 +218,12 @@ bindsym $mod+Insert exec clipmenu
 bindsym Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 bindsym Shift+Print exec "scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 bindsym --release $mod+p exec --no-startup-id notify-send "$(xprop _NET_WM_PID | cut -d' ' -f3)"
+
+# Disable titlebars
+for_window [class=".*"] border normal
+
+# Setup gaps
+#gaps inner 5 
+
+# Toggle keyboard layout
+exec --no-startup-id "setxkbmap -model pc104 -layout us,sk -option grp:alt_shift_toggle"
